@@ -1,0 +1,69 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f8f5f2;
+    color: #2d2926;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.category-tab.active {
+    background-color: #e8c547;
+    color: #2d2926;
+    font-weight: 600;
+}
+
+.menu-item {
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    border-left-color: #e8c547;
+    background-color: rgba(232, 197, 71, 0.1);
+}
+
+.menu-item.selected {
+    border-left-color: #e8c547;
+    background-color: rgba(232, 197, 71, 0.2);
+}
+
+.color-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.difficulty-stars {
+    color: #e8c547;
+}
+
+.step-number {
+    background-color: #e8c547;
+    color: #2d2926;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.ingredient-item {
+    position: relative;
+    padding-left: 20px;
+}
+
+.ingredient-item:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #e8c547;
+    font-size: 1.2em;
+}

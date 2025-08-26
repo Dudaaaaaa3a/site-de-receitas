@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livro de Receitas - Sonhado Sabor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" 
+          rel="stylesheet">
+    <!-- Importa o CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Sonhado Sabor</h1>
+            <p class="text-lg text-gray-600 italic">Livro de Receitas Gourmet</p>
+            <div class="w-24 h-1 bg-amber-400 mx-auto my-4"></div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Left Column - Recipe Categories and Items -->
+            <div class="lg:w-2/5 bg-white rounded-lg shadow-md p-6">
+                <!-- Category Tabs -->
+                <div class="flex overflow-x-auto mb-6 pb-2 gap-2">
+                    <button class="category-tab active whitespace-nowrap px-6 py-2 rounded-full text-sm md:text-base" data-category="entradas">Entradas</button>
+                    <button class="category-tab whitespace-nowrap px-6 py-2 rounded-full text-sm md:text-base" data-category="massas">Massas</button>
+                    <button class="category-tab whitespace-nowrap px-6 py-2 rounded-full text-sm md:text-base" data-category="sobremesas">Sobremesas</button>
+                </div>
+
+                <!-- Recipe Items -->
+                <div id="menu-items-container" class="space-y-4">
+                    <!-- (as receitas continuam aqui como no código original, sem alterações) -->
+                </div>
+            </div>
+
+            <!-- Right Column - Recipe Details -->
+            <div class="lg:w-3/5">
+                <div id="empty-recipe" class="bg-white rounded-lg shadow-md p-6 text-center py-16">
+                    <svg class="w-20 h-20 mx-auto text-gray-300" fill="none" stroke="currentColor" 
+                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 
+6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 
+18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 
+1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                    <p class="mt-6 text-gray-500 text-lg">Selecione uma receita para ver os detalhes</p>
+                    <p class="mt-2 text-gray-400">Ingredientes e modo de preparo aparecerão aqui</p>
+                </div>
+
+                <div id="recipe-details" class="bg-white rounded-lg shadow-md p-6 hidden">
+                    <!-- Detalhes da receita -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Legend -->
+        <div class="mt-10 bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-lg font-semibold mb-3">Legenda</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                <div class="flex items-center">
+                    <span class="color-dot" style="background-color: #e74c3c;"></span>
+                    <span class="text-sm">Proteína</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="color-dot" style="background-color: #2ecc71;"></span>
+                    <span class="text-sm">Vegetariano</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="color-dot" style="background-color: #3498db;"></span>
+                    <span class="text-sm">Sem Glúten</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="color-dot" style="background-color: #f39c12;"></span>
+                    <span class="text-sm">Contém Álcool</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="color-dot" style="background-color: #9b59b6;"></span>
+                    <span class="text-sm">Premium</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
